@@ -39,7 +39,7 @@ namespace MyTGbot.Commands
                 _ = _botClient.SendMessage(message.Chat.Id, $"Can`t find user with name {name}");
                 return false;
             }
-            _ = _botClient.SendMessage(message.Chat.Id, $"Name: {userInfo.Name}, tg id: {userInfo.TelegramID}, last seen: {userInfo.lastSeen}");
+            _ = _botClient.SendMessage(message.Chat.Id, $"Name: {userInfo.Name}, tg id: {userInfo.Id}, last seen: {userInfo.lastSeen}");
             return true;
         }
         private async Task<UserInfo?> GetUserInfo(String name)
@@ -47,7 +47,7 @@ namespace MyTGbot.Commands
             HttpResponseMessage responseMessage = null;
             try
             {
-                responseMessage = await MyHttpClient.sharedClient.GetAsync($"api/UserInfo/{name}");
+                responseMessage = await MyHttpClient.sharedClient.GetAsync($"api/UserInfo/name={name}");
             }
             catch(Exception ex)
             {

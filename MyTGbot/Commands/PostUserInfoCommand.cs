@@ -33,7 +33,8 @@ namespace MyTGbot.Commands
             if (type is not UpdateType.Message)
                 return false;
 
-            UserInfo user = new UserInfo() {Name = name, lastSeen = DateTime.Now, TelegramID = chatId.Identifier.ToString()};
+            UserInfo user = new UserInfo() {Name = name, lastSeen = DateTime.Now, Id = chatId.Identifier.Value};
+
             HttpResponseMessage responseMessage;
             try
             {

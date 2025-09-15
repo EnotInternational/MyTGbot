@@ -28,6 +28,9 @@ commandMapper.RegisterCommand(new GetUserInfoCommand(bot)
 
 commandMapper.RegisterCommand(new PostUserInfoCommand(bot)
 { Command = "/register_me", Description = "registers you in the satan`s hell database" });
+
+commandMapper.RegisterCommand(new SayMyNameCommand(bot)
+{ Command = "/say_my_name", Description = "says your name" });
 //commandMapper.RegisterCommand(new GetUserInfoCommand(commandMapper, bot) { Command = "/getUserInfo", Description = "gets given user info" });
 
 commandMapper.CompleteRegistration();

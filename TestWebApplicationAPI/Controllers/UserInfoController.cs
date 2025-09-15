@@ -15,8 +15,24 @@ namespace TestWebApplicationAPI.Controllers
         {
             return new string[] { "value1", "value2" };
         }
+        [HttpGet("id={id}")]
+        public ActionResult<UserInfo> Get(long id)
+        {
+            using (ApplicationContext context = new ApplicationContext())
+            {
+                IQueryable<UserInfo> set = context.Users.Where(user => user.Id == id);
+                if (set.Count() <= 0)
+                    return new NotFoundObjectResult($"User with id {id} not found");
 
-        [HttpGet("{name}")]
+                UserInfo user = set.First();
+
+                if (user is not { })
+                    return new NotFoundObjectResult($"User with id {id} not found");
+
+                return user;
+            }
+        }
+        [HttpGet("name={name}")]
         public ActionResult<UserInfo> Get(string name)
         {
             using (ApplicationContext context = new ApplicationContext())
@@ -32,8 +48,6 @@ namespace TestWebApplicationAPI.Controllers
 
                 return user;
             }
-
-            
         }
         [HttpPost]
         public void Post([FromBody] UserInfo value)
