@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApplicationAPI", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TgBotClassLibrary", "TgBotClassLibrary\TgBotClassLibrary.csproj", "{92452B0D-C1EA-457F-BDED-0CDBD5277942}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTelegratorBot", "MyTelegratorBot\MyTelegratorBot.csproj", "{C8EEB3EC-68A2-4F4B-A074-02109727C494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWFApp", "MyWFApp\MyWFApp.csproj", "{66432227-E120-44C6-9601-4558619ADB81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{92452B0D-C1EA-457F-BDED-0CDBD5277942}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92452B0D-C1EA-457F-BDED-0CDBD5277942}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92452B0D-C1EA-457F-BDED-0CDBD5277942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8EEB3EC-68A2-4F4B-A074-02109727C494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8EEB3EC-68A2-4F4B-A074-02109727C494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8EEB3EC-68A2-4F4B-A074-02109727C494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8EEB3EC-68A2-4F4B-A074-02109727C494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66432227-E120-44C6-9601-4558619ADB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66432227-E120-44C6-9601-4558619ADB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66432227-E120-44C6-9601-4558619ADB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66432227-E120-44C6-9601-4558619ADB81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
