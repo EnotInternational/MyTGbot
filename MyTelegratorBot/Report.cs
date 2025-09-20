@@ -11,8 +11,8 @@ namespace MyTelegratorBot
         public long UserId { get; set; }
         public string DangerType { get; set; }
         public string Text { get; set; }
-        public ReportStatus Status { get; set; } = ReportStatus.Constructing;
-
-        public enum ReportStatus {Constructing, Ready};
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
+        public DateTime DateTime { get; set; }
     }
 }

@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TgBotClassLibrary", "TgBotC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTelegratorBot", "MyTelegratorBot\MyTelegratorBot.csproj", "{C8EEB3EC-68A2-4F4B-A074-02109727C494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWFAppNet", "MyWFAppNet\MyWFAppNet.csproj", "{8F1771D8-FCBC-4BA1-9D8D-F63B349E562E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{C8EEB3EC-68A2-4F4B-A074-02109727C494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8EEB3EC-68A2-4F4B-A074-02109727C494}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8EEB3EC-68A2-4F4B-A074-02109727C494}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F1771D8-FCBC-4BA1-9D8D-F63B349E562E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F1771D8-FCBC-4BA1-9D8D-F63B349E562E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F1771D8-FCBC-4BA1-9D8D-F63B349E562E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F1771D8-FCBC-4BA1-9D8D-F63B349E562E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
