@@ -1,14 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Microsoft.Extensions.DependencyInjection;
+using MyTelegratorBot;
 using MyTelegratorBot.Handlers;
+using Telegram.Bot;
 using Telegrator;
+using Telegrator.Hosting;
 
 Console.WriteLine("Hello, World!");
 
-const string BOT_TOKEN = "7605212970:AAEZVjg-CFwlpVaLlkf4bH08p6dl3vx8Pdc";
+TelegratorClient bot = new TelegratorClient("8392580190:AAEKxTK2kyuG5LAnJpYCT1bwVPKi88oni1g");
+ReportConstructorService reportConstructorService = new();
 
-var bot = new TelegratorClient(BOT_TOKEN);
-
-bot.Handlers.CollectHandlersDomainWide();
+bot.Handlers.CollectHandlersAssemblyWide();
 bot.StartReceiving();
-
 Console.ReadLine();

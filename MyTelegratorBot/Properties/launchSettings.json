@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MyTelegratorBot": {
+      "commandName": "Project",
+        "environmentVariables": {
+            "Token": "8392580190:AAEKxTK2kyuG5LAnJpYCT1bwVPKi88oni1g"
+        }
+    }
+  }
+}

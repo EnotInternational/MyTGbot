@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ApplicationDefinition Include="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Telegrator.Hosting" Version="1.15.9" />
   </ItemGroup>
 
