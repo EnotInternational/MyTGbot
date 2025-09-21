@@ -8,13 +8,7 @@ namespace MyTelegratorBot
 {
     public static class EnemyCategories
     {
-        public static List<string> List = 
-            new List<string>()
-            {
-                "НЛО",
-                "Гитлер",
-                "Сметана"
-            };
+        public static List<string> List { get; set; } = new List<string>();
 
     }
 }

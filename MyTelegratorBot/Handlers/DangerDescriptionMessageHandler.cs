@@ -14,7 +14,7 @@ namespace MyTelegratorBot.Handlers
 
         public override async Task<Result> Execute(IAbstractHandlerContainer<Message> container, CancellationToken cancellation)
         {
-            if (!ReportConstructorService.Instance.TryGetConstructingReport(container.ActualUpdate.From.Id, out Report report).Positive)
+            if (!ReportConstructorService.Instance.TryGet(container.ActualUpdate.From.Id, out Report report).Positive)
             {
                 return Result.Fault();
             }

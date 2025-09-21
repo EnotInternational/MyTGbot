@@ -23,7 +23,7 @@ namespace MyTelegratorBot.Handlers
         {
             var keyboard = new InlineKeyboardMarkup(new[]
             {
-                InlineKeyboardButton.WithCallbackData("Сообщить об угрозе", "report_enemy"),
+                InlineKeyboardButton.WithCallbackData("Сообщить об угрозе", "report"),
             });
             await Responce("**EnemyTraker**\r\t\nЕсли вы заметили космическую тарелку, загадочного монстра или природное явление - нажмите кнопку ниже и расскажите нам об этом. Ваше сообщение поможет администратору быстро оценить, является ли объект угрозой и принять необходимые меры. Ваша бдительность очень важна!", replyMarkup: keyboard, parseMode:ParseMode.Markdown);
             return Result.Ok();

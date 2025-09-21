@@ -14,7 +14,7 @@ namespace MyTelegratorBot.Handlers
             string data = container.ActualUpdate.Data;
             data = data.Remove(0, 6);
 
-            if(!ReportConstructorService.Instance.TryGetConstructingReport(container.ActualUpdate.From.Id, out Report report).Positive)
+            if(!ReportConstructorService.Instance.TryGet(container.ActualUpdate.From.Id, out Report report).Positive)
             {
                 return Result.Fault();
             }
